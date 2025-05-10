@@ -1,0 +1,36 @@
+.add-todo {
+    width: 35px !important;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -12px);
+    background-color: var(--color-orange);
+    cursor: pointer;
+    box-shadow: 0 0 4px #121212ba;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transform: translate(-50%, -17px);
+    -moz-transform: translate(-50%, -17px);
+    -ms-transform: translate(-50%, -17px);
+    -o-transform: translate(-50%, -17px);
+}
+.add-todo:hover {
+    background-color: var(--color-black);
+}
+.add-todo .icon {
+    font-size: 28px;
+    color: var(--color-white-light);
+}
+
+

@@ -1,0 +1,93 @@
+.todo-form {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff61;
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+}
+.todo-form.open {
+    display: flex;
+}
+.todo-form .close-icon {
+    align-self: end;
+    background-color: var(--color-orange);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--color-white-light);
+    font-size: 14px;
+    margin: -5px 10px;
+    box-shadow: 0 0 5px #12121259;
+    cursor: pointer;
+}
+.todo-form .container {
+    height: 40%;
+    background-color: var(--color-white-light);
+    padding: 60px 20px 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0 0 5px #12121275;
+}
+.todo-form .container .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+}
+.todo-form .container  .form-box input {
+    border: 1px solid var(--color-orange);
+    border-radius: 7px;
+    height: 28px;
+    padding: 0 7px;
+    font-size: 14px;
+    color: var(--color-black);
+}
+.todo-form .container  .form-box input::placeholder {
+    font-size: 14px;
+    color: var(--color-black);
+}
+.todo-form .container .form-box select {
+    height: 28px;
+    border: 1px solid var(--color-orange);
+    border-radius: 7px;
+    font-size: 14px;
+    color: var(--color-black);
+}
+.todo-form .container .form-box select option {
+    background-color: var(--color-white);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.todo-form .container .form-box select option:active {
+    background-color: var(--color-orange);
+}
+.todo-form .container .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    gap: 10px;
+}
+.todo-form .container .buttons button {
+    border: none;
+    border-radius: 7px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 0 6px #12121240;
+    cursor: pointer;
+}
+.todo-form .container .buttons button:first-of-type {
+    background-color: var(--color-orange);
+    color: var(--color-white-light);
+    cursor: pointer;
+}
+.todo-form .container .buttons button:last-of-type {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}

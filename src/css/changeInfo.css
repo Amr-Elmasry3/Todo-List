@@ -1,0 +1,114 @@
+.change-info {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fae3cf8f;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.change-info.open {
+    display: flex;
+}
+.change-info .container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white-light);
+    width: 60%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #12121273;
+}
+@media (max-width: 500px) {
+    .change-info .container {
+        width: 90%;
+    }
+}
+.change-info .container h3 {
+    color: var(--color-black);
+    text-align: center;
+    margin: 0 0 15px;
+}
+.change-info .container .photo {
+    position: relative;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+.change-info .container .photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+.change-info .container .photo .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: var(--color-black);
+}
+.change-info .container input.file {
+    display: none;
+}
+.change-info .container input.name {
+    width: 100%;
+    border: 1px solid var(--color-orange);
+    border-radius: 7px;
+    height: 30px;
+    background-color: var(--color-white);
+    font-size: 14px;
+    color: var(--color-black);
+    padding: 0 8px;
+    margin: 12px 0 0;
+}
+.change-info .container input.name::placeholder {
+    color: var(--color-black);
+}
+.change-info .container input.error {
+    border: 1px solid var(--color-red);
+}
+.change-info .container .btns {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.change-info .container .btns button {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+.change-info .container .btns button:first-of-type {
+    background-color: var(--color-black);
+    color: var(--color-white-light);
+}
+.change-info .container .btns button:last-of-type {
+    background-color: var(--color-red);
+    color: var(--color-white-light);
+}
+.change-info .container .delete-section {
+    margin: 15px 0 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--color-black);
+    text-align: center;
+}
+.change-info .container .delete-section h3 {
+    color: var(--color-red);
+    text-align: center;
+    margin: 0 0 15px
+}
+.change-info .container .delete-section button {
+    background-color: var(--color-red);
+    color: var(--color-white-light);
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    cursor: pointer;
+}

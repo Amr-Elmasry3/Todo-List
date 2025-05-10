@@ -1,0 +1,39 @@
+.get-start-page {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+.get-start-page.open {
+    display: flex;
+}
+.get-start-page img {
+    width: 220px;
+}
+.get-start-page h2 {
+    color: var(--color-black);
+}
+.get-start-page p {
+    font-size: 15px;
+    color: var(--color-black);
+    line-height: 1.3;
+    margin: 7px 0;
+}
+@media (max-width: 500px) {
+    .get-start-page p {
+        max-width: 75%;
+    }
+}
+.get-start-page button {
+    background-color: var(--color-black);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-white-light);
+    border: none;
+    border-radius: 7px;
+    padding: 8px 15px;
+    margin: 12px 0 15px;
+    cursor: pointer;
+}

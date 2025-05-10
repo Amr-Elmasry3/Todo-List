@@ -1,0 +1,12 @@
+.main-box {
+    position: absolute;
+    width: 330px;
+    height: 80%;
+    border: 5px solid var(--color-black);
+    border-radius: 20px;
+    box-shadow: 0 0 12px #12121294;
+    overflow: hidden;
+}
+.main-box div {
+    width: 100%;
+}
