@@ -86,7 +86,7 @@ export default function ShowTodosPage() {
       <div className={"details-box"}>
         <Details
           src={categoryDetails.src}
-          title={categoryDetails.title}
+          title={t(categoryDetails.title)}
           countTasks={categoryDetails.countTasks}
         />
       </div>
